@@ -185,4 +185,51 @@ section {
     top: 50%;
     transform: translateY(-50%);
 }
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Updated: Images in separate rows under buttons */
+    .image-container {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px; /* Space from buttons */
+    }
+
+    .floating-image {
+        height: auto;
+    }
+
+    .left-image, 
+    .right-image {
+        position: static; /* Reset absolute positioning */
+    }
+    .hero{
+        display: block;
+    }
+    .left-image {
+        transform: translate(10px,10px) !important;
+    }
+    
+    .right-image {
+        transform: translate(10px,10px) !important;
+    }
+}
 
