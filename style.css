@@ -7,7 +7,7 @@
 
 /* Root Variables */
 :root {
-    --primary-color: #007bff;
+    --primary-color: #043A53;
     --secondary-color: #6c757d;
     --accent-color: #28a745;
     --background-color: #f8f9fa;
@@ -76,3 +76,113 @@ a:hover {
 section {
     padding: 32px 0;
 }
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+/* Section Styling */
+.hero-section {
+    position: relative;
+    background-color: #043A53; /* Updated Dark Blue Background */
+    color: white; /* Ensure text is readable */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px; /* Optional: Adds rounded corners */
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 700px;
+    color: var(--text-color);
+    position: relative;
+    z-index: 2; /* Ensures text stays on top */
+}
+
+/* Headings */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.highlight {
+    color: black;
+}
+
+.brand-name {
+    color: var(--primary-color);
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: #0d253f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    box-shadow: #043A53;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #093052;
+}
+
+/* Play Button */
+.btn-secondary {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play-icon {
+    background: #043A53;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+/* Floating Images */
+.floating-image {
+    position: absolute;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    z-index: 1;
+}
+
+.left-image {
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-image {
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
